@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background-color: #f8f9f9;
+
+  border-top: 3px solid var(--clr-primary);
+
+  &__logo {
+    width: 150px;
+  }
+
+  &__center {
+  }
+
+  &__end {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    .header {
+      &__profile {
+        aspect-ratio: 1 / 1;
+        height: 29px;
+        border-radius: 3px;
+
+        & > img {
+          width: 100%;
+          height: 100%;
+          border-radius: inherit;
+        }
+      }
+    }
+  }
+}
