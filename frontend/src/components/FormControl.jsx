@@ -1,3 +1,4 @@
+import { ErrorIcon } from '../icons';
 import './FormControl.scss';
 
 function FormControl({
@@ -6,6 +7,7 @@ function FormControl({
   type,
   placeholder,
   hintText,
+  error,
   onChange,
   value,
   ...props
@@ -13,14 +15,22 @@ function FormControl({
   return (
     <div className="form__control">
       <label>{label}</label>
-      <input
-        name={name}
-        type={type}
-        placeholder={placeholder}
-        {...props}
-        onChange={onChange}
-        value={value}
-      />
+      <div className={`form__inputContainer${error ? ' error' : ''}`}>
+        <input
+          id={name}
+          name={name}
+          type={type}
+          placeholder={placeholder}
+          onChange={onChange}
+          value={value}
+          {...props}
+        />
+        <div className="error-icon">
+          <ErrorIcon />
+        </div>
+      </div>
+      {error && <p className="error-text">{error}</p>}
+
       {hintText && <p className="hint">{hintText}</p>}
     </div>
   );

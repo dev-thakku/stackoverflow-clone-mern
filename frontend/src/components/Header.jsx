@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 
 import './Header.scss';
 import Logo from './Logo';
-import SearchIcon from '../icons/SearchIcon';
+import { SearchIcon, StackIcon } from '../icons';
 import Button from './Button';
 
 function Header() {
@@ -10,7 +10,8 @@ function Header() {
   return (
     <header className="header">
       <div className="header__logo" onClick={() => navigate('/')}>
-        <Logo />
+        <Logo id="logo-large" />
+        <StackIcon id="logo-small" />
       </div>
 
       <div className="header__center">

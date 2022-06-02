@@ -1,9 +1,9 @@
-.register {
+main {
   padding: 2rem 1rem;
-  min-height: 100vh;
+  min-height: calc(100vh - 51px);
   background-color: #f1f2f3;
 
-  &__container {
+  .container {
     display: flex;
     align-items: center;
     gap: 1.3rem;
@@ -12,22 +12,34 @@
     margin-inline: auto;
   }
 
-  &__caption {
+  .logo {
+    height: 35px;
+  }
+
+  .caption {
     color: #232629;
     font-size: 21px;
     text-align: center;
   }
 
-  &__buttons {
+  .login-buttons {
     width: calc(100% - 7rem);
   }
 
-  &__formContainer {
+  .formContainer {
     width: calc(100% - 7rem);
     padding: 1rem;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 10px 24px hsla(0, 0%, 0%, 0.05),
       0 20px 48px hsla(0, 0%, 0%, 0.05), 0 1px 4px hsla(0, 0%, 0%, 0.1);
+  }
+
+  .bottom-text {
+    font-size: 13px;
+
+    a {
+      color: #0074cc;
+    }
   }
 }

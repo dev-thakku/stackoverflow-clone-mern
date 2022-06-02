@@ -9,6 +9,7 @@ function Button({
   fullWidth,
   className = '',
   disabled = false,
+  ...props
 }) {
   return (
     <button
@@ -19,6 +20,7 @@ function Button({
         className ? ` className` : ''
       }`}
       disabled={disabled}
+      {...props}
     >
       {children}
     </button>
