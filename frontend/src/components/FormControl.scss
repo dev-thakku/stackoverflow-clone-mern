@@ -1,0 +1,29 @@
+.form__control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+
+  label {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  input {
+    width: 100%;
+    padding: 0.6em 0.7em;
+    border: 1px solid #babfc4;
+    outline: none;
+    border-radius: 3px;
+    font-size: 13px;
+
+    &:focus {
+      border-color: rgb(107, 187, 247);
+      box-shadow: rgba(0, 116, 204, 0.15) 0px 0px 0px 4px;
+    }
+  }
+
+  .hint {
+    color: #6a737c;
+    font-size: 12px;
+  }
+}

@@ -79,6 +79,12 @@ body {
 }
 
 :root {
-    --clr-primary: hsl(27,90%,55%);
-    --clr-accent: hsl(206,100%,52%);
+  --clr-primary: hsl(27, 90%, 55%);
+  --clr-accent: hsl(206, 100%, 52%);
 }
+
+svg {
+  height: 100%;
+  width: 100%;
+}
+

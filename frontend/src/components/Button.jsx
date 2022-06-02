@@ -3,16 +3,21 @@ import './Button.scss';
 function Button({
   children,
   onClick,
-  varient = '',
+  primary,
+  secondary,
+  normal,
+  fullWidth,
   className = '',
   disabled = false,
 }) {
   return (
     <button
       onClick={onClick}
-      className={`btn btn-${
-        varient === 'secondary' ? 'secondary' : 'primary'
-      } ${className}`}
+      className={`btn${secondary ? ' btn-secondary' : ''}${
+        primary ? ' btn-primary' : ''
+      }${normal ? ' btn-normal' : ''}${fullWidth ? ' btn-full-width' : ''}${
+        className ? ` className` : ''
+      }`}
       disabled={disabled}
     >
       {children}

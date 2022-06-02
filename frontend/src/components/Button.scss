@@ -1,6 +1,9 @@
 .btn {
   position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
   padding: 0.5em 0.8em;
   font-size: 13px;
   border: 1px solid transparent;
@@ -34,5 +37,25 @@
       color: #2c5877;
       background-color: #b3d3ea;
     }
+  }
+
+  &-normal {
+    padding: 0.8em;
+    background-color: #fff;
+    color: #3b4045;
+    border-color: #d6d9dc;
+
+    &:hover {
+      background-color: #f8f9f9;
+      color: #232629;
+    }
+  }
+
+  &-full-width {
+    width: 100%;
+  }
+
+  .icon {
+    height: 16px;
   }
 }
