@@ -1,13 +1,13 @@
 import './RegisterLogin.scss';
 
-import Button from '../components/Button';
+import Button from '../components/Button/Button';
 import { GoogleIcon, StackIcon } from '../icons';
-import LoginForm from '../components/LoginForm';
+import LoginForm from '../components/LoginForm/LoginForm';
 import { Link } from 'react-router-dom';
 
 function LoginPage() {
   return (
-    <main className="register">
+    <main className="auth-main">
       <div className="container">
         <div className="logo">
           <StackIcon />

@@ -1,0 +1,31 @@
+.homepage {
+  display: flex;
+  --sidebar-width: 180px;
+
+  &__content {
+    flex: 1;
+    height: 200vh;
+    margin-left: var(--sidebar-width);
+    padding: 1.5rem 0;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    border-bottom: 1px solid #d6d9dc;
+
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2.5rem;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: #262329;
+    }
+  }
+}

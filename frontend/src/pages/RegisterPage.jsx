@@ -1,13 +1,13 @@
 import './RegisterLogin.scss';
 
-import Button from '../components/Button';
+import Button from '../components/Button/Button';
 import { GoogleIcon } from '../icons';
-import RegistrationForm from '../components/RegistrationForm';
+import RegistrationForm from '../components/RegistrationForm/RegistrationForm';
 import { Link } from 'react-router-dom';
 
 function RegisterPage() {
   return (
-    <main className="register">
+    <main className="auth-main">
       <div className="container">
         <div className="caption">
           Create your Stack Overflow account. It’s free and only takes a minute.

@@ -1,0 +1,49 @@
+.sidebar {
+  position: fixed;
+  height: 100%;
+  overflow-y: hidden;
+  width: var(--sidebar-width);
+  border-right: 1px solid #d6d9dc;
+
+  &__options {
+    list-style: none;
+    margin-top: 1.25rem;
+    padding: 0;
+    font-size: 13px;
+  }
+
+  &__option {
+    padding: 0.5em;
+    padding-left: 5px;
+    color: #525960;
+
+    &:hover {
+      color: #202020;
+    }
+
+    & + & {
+      margin-top: 0.4em;
+    }
+
+
+
+    &.selected {
+      font-weight: bold;
+      background: #f1f2f3;
+      color: #0c0d0e;
+      border-right: 3px solid #f48225;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      color: inherit;
+
+      .icon {
+        height: 22px;
+      }
+    }
+  }
+}
