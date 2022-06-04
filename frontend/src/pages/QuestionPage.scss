@@ -1,4 +1,4 @@
-.homepage {
+.questionpage {
   display: flex;
   --sidebar-width: 180px;
 
@@ -22,9 +22,16 @@
     }
 
     h1 {
-      font-size: 1.8rem;
+      font-size: 1.7rem;
       font-weight: 400;
       color: #262329;
+    }
+
+    button {
+      flex-shrink: 0;
+      align-self: baseline;
+      padding: 0.8em;
+      margin-left: 1rem;
     }
   }
 }

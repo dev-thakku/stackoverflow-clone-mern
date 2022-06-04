@@ -1,0 +1,94 @@
+.question {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #d6d9dc;
+  }
+
+  &__stats {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+    padding-left: 2rem;
+    font-size: 13px;
+    color: #0c0d0e;
+
+    &Item:not(:first-child) {
+      color: #6a737c;
+    }
+
+    &Item.answered {
+      padding: 0.2em;
+      color: #3d8f58;
+      border: 1px solid #3d8f58;
+      border-radius: 3px;
+    }
+  }
+
+  &__content {
+    flex: 1;
+    align-self: flex-start;
+
+    .title {
+      font-size: 17px;
+      font-weight: 400;
+      color: #0074cc;
+      cursor: pointer;
+
+      &:hover {
+        color: #0a95ff;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+
+    .meta {
+      display: flex;
+      align-items: center;
+      margin-top: 0.5rem;
+      font-size: 12px;
+
+      &__tags {
+        display: flex;
+        gap: 0.5em;
+
+        .tag-item {
+          display: flex;
+          align-items: flex-start;
+          padding: 0.4em 0.5em;
+          margin: 2px 2px 2px 0;
+          background-color: #e1ecf4;
+          color: #39739d;
+          line-height: 1;
+          white-space: nowrap;
+          text-decoration: none;
+          text-align: center;
+          border-radius: 3px;
+        }
+      }
+
+      &__userCard {
+        display: flex;
+        margin-left: auto;
+
+        .profile-image {
+          width: 18px;
+          height: 18px;
+          border-radius: 3px;
+          margin-right: 0.5em;
+        }
+
+        .user-info {
+          color: #0074cc;
+        }
+      }
+    }
+  }
+}
