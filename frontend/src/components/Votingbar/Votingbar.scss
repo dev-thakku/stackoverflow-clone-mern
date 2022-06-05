@@ -1,0 +1,30 @@
+.votingbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 1rem;
+  color: #6a737c;
+
+  .upvote,
+  .downvote {
+    background: transparent;
+    border: none;
+    outline: none;
+    height: 36px;
+    color: #babfc4;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      color: #6a737c;
+    }
+
+    &.marked {
+        color: #f48225;
+    }
+  }
+
+  .vote-count {
+    font-size: 21px;
+  }
+}

@@ -1,4 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom';
+import Tag from '../Tag/Tag';
 
 function QuestionTile({ question }) {
   const naviagte = useNavigate();
@@ -24,9 +25,7 @@ function QuestionTile({ question }) {
         <div className="meta">
           <div className="meta__tags">
             {question.tags.map((tag, i) => (
-              <a className="tag-item" key={i}>
-                {tag}
-              </a>
+              <Tag text={tag} key={i} />
             ))}
           </div>
           <div className="meta__userCard">

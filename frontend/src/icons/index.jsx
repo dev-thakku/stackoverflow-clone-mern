@@ -101,3 +101,19 @@ export function TagIcon() {
     </svg>
   );
 }
+
+export function UpVoteIcon() {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 36 36" fill="currentColor">
+      <path d="M2 25h32L18 9 2 25Z"></path>
+    </svg>
+  );
+}
+
+export function DownVoteIcon() {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 36 36" fill="currentColor">
+      <path d="M2 11h32L18 27 2 11Z"></path>
+    </svg>
+  );
+}

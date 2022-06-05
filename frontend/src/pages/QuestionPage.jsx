@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import './QuestionPage.scss';
 import Button from '../components/Button/Button';
 import Sidebar from '../components/Sidebar/Sidebar';
-import QuestionsFeed from '../components/QuestionsFeed/QuestionsFeed';
+import Post from '../components/Post/Post';
 
 function QuestionPage() {
   const location = useLocation();
@@ -19,8 +19,24 @@ function QuestionPage() {
             <h1>{question.title}</h1>
             <Button primary>Ask Question</Button>
           </div>
+          <div className="bottom">
+            <div className="bottom__item">
+              Asked <span>today</span>
+            </div>
+            <div className="bottom__item">
+              Modified <span>today</span>
+            </div>
+            <div className="bottom__item">
+              Viewed <span>11 times</span>
+            </div>
+          </div>
         </header>
-        <QuestionsFeed />
+        <div className="questionpage__main-container">
+          <div className="question-container">
+            <Post />
+          </div>
+          <div className="answers"></div>
+        </div>
       </main>
     </div>
   );
