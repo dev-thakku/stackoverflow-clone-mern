@@ -1,3 +1,5 @@
+import Comment from '../Comment/Comment';
+import CommentAction from './CommentAction';
 import Tag from '../Tag/Tag';
 import Votingbar from '../Votingbar/Votingbar';
 import './Post.scss';
@@ -10,6 +12,7 @@ function Post({ type, content, tags, votes, createdAt, updatedAt, user }) {
       </div>
       <div className="post">
         <div className="post__content">
+          {/* TODO: markdown */}
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
           doloremque veritatis, earum aperiam quae voluptatibus quibusdam error
           ratione perspiciatis eligendi reiciendis beatae iusto culpa officiis
@@ -45,7 +48,13 @@ function Post({ type, content, tags, votes, createdAt, updatedAt, user }) {
           </div>
         </div>
       </div>
-      <div className="comment-cell"></div>
+      <div className="comment-cell">
+        <Comment />
+        <Comment />
+        <Comment />
+        <Comment />
+        <CommentAction />
+      </div>
     </div>
   );
 }

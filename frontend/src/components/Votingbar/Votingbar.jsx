@@ -1,9 +1,9 @@
 import { DownVoteIcon, UpVoteIcon } from '../../icons';
 import './Votingbar.scss';
 
-function Votingbar() {
+function Votingbar({ type = 'normal' }) {
   return (
-    <div className="votingbar">
+    <div className={`votingbar${type === 'small' ? ' small' : ''}`}>
       <button className="upvote">
         <UpVoteIcon />
       </button>

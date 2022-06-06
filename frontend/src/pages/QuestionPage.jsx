@@ -4,12 +4,12 @@ import './QuestionPage.scss';
 import Button from '../components/Button/Button';
 import Sidebar from '../components/Sidebar/Sidebar';
 import Post from '../components/Post/Post';
+import AddAnswerForm from '../components/AddAnswer/AddAnswer';
 
 function QuestionPage() {
   const location = useLocation();
 
   const question = location.state.question;
-
   return (
     <div className="questionpage">
       <Sidebar />
@@ -35,7 +35,27 @@ function QuestionPage() {
           <div className="question-container">
             <Post />
           </div>
-          <div className="answers"></div>
+          <div className="answers">
+            <div className="answers__header">
+              <div className="title">7 Answers</div>
+              <div className="sort-container">
+                Sorted by:
+                <select name="sort" id="sort">
+                  <option value="scoredesc" selected>
+                    Highest Score
+                  </option>
+                  <option value="modifieddesc">
+                    Date modified (newest first)
+                  </option>
+                  <option value="createddesc">
+                    Date created (oldest first)
+                  </option>
+                </select>
+              </div>
+            </div>
+            <Post />
+            <AddAnswerForm />
+          </div>
         </div>
       </main>
     </div>

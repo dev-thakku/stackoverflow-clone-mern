@@ -45,7 +45,36 @@
 
         span {
           color: #232629;
+        }
+      }
+    }
+  }
 
+  .answers {
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 0.75rem;
+
+      .title {
+        font-weight: 400;
+        font-size: 19px;
+        color: #232629;
+      }
+
+      .sort-container {
+        select {
+          margin-left: 5px;
+          font-size: 13px;
+          padding: 0.6em 0.7em;
+          border: 1px solid #babfc4;
+          border-radius: 3px;
+          outline: none;
+
+          &:focus {
+            border-color: rgb(107, 187, 247);
+            box-shadow: rgba(0, 116, 204, 0.15) 0px 0px 0px 4px;
+          }
         }
       }
     }

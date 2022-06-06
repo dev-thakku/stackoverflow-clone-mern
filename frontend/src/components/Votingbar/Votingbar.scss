@@ -20,11 +20,28 @@
     }
 
     &.marked {
-        color: #f48225;
+      color: #f48225;
     }
   }
 
   .vote-count {
     font-size: 21px;
+  }
+
+  &.small {
+    flex-direction: row-reverse;
+    padding-right: 0.2em;
+
+    .downvote {
+      display: none;
+    }
+
+    .upvote {
+      height: 22px;
+    }
+
+    .vote-count {
+      font-size: 16px;
+    }
   }
 }

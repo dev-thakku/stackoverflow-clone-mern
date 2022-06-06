@@ -1,0 +1,38 @@
+.editor-container {
+  margin-bottom: 1rem;
+
+  .w-md-editor-toolbar {
+    height: 40px !important;
+
+    .w-md-editor-toolbar-divider {
+      height: 20px;
+    }
+
+    button {
+      height: 25px;
+    }
+
+    ul:last-child {
+      & > li:not(:last-child) {
+        display: none;
+      }
+    }
+  }
+
+  .w-md-editor-fullscreen {
+    ul:last-child {
+      & > li:not(:last-child) {
+        display: inline-block;
+      }
+    }
+  }
+
+  .w-md-editor-content {
+    border-radius: 3px;
+
+    &:focus-within {
+      border: 1px solid rgb(107, 187, 247);
+      box-shadow: rgba(0, 116, 204, 0.15) 0px 0px 0px 4px;
+    }
+  }
+}

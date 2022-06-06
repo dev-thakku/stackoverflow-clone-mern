@@ -1,0 +1,21 @@
+.comment {
+  display: flex;
+  font-size: 13px;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f1f2f3;
+
+  &__voting {
+    flex-shrink: 0;
+  }
+
+  &__content {
+    .author {
+      color: #0074cc;
+    }
+
+    .time {
+      margin-left: 5px;
+      color: #9199a1;
+    }
+  }
+}
